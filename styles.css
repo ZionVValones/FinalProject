@@ -1,9 +1,91 @@
-     body {
+ body {
         background-color:#606C38;
-		padding: 50px;
+		    padding: 50px;
         margin: 20px;
 	 }
-	 
+
+
+.sprite {
+  background: url('pictures/generalpics.png') no-repeat;
+  display: block;
+}
+
+.unplug {
+  background-position: -264px -42px;
+  width: 400px; 
+  height: 149px; 
+}
+
+.walkingcycling {
+  background-position: -256px -300px;
+  width: 400px; 
+  height: 106px; 
+}
+
+.five-r {
+  background-position: -33px -300px;
+  width: 200px; 
+  height: 98px; 
+}
+
+.windsolar {
+  background-position: -39px -42px;
+  width: 400px; 
+  height: 126px; 
+}
+
+
+.sprite2 {
+  background: url('pictures/studentpics.png') no-repeat;
+  display: block;
+}
+
+.socmed {
+	background-position: -20px -50px;
+	width: 216px;
+	height: 144px;
+}
+
+.switch {
+	background-position: -280px -50px;
+	width: 193px;
+	height: 144px;
+}
+
+.garden {
+	background-position: -16px -263px;
+	width: 229px;
+	height: 153px;
+}
+
+.treeplant {
+	background-position: -263px -263px;
+	width: 226px;
+	height: 151px;
+}
+
+
+.sprite3 {
+  background: url('pictures/birdie.png') no-repeat;
+  width: 150px; 
+  height: 170px; 
+  animation: fly 1s steps(3) infinite; 
+}
+
+@keyframes fly {
+  from { background-position-x: 0; }
+  to { background-position-x: -600px; } 
+}
+
+
+div[class="sprite3"] {
+  border: solid #606C38; 
+}
+
+::selection {
+  background-color: #d8e2c4; 
+}
+
 	 h1 {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
@@ -38,7 +120,7 @@
 	
 	
     .navbar a{
-    color: #283618;;
+    color: #283618;
     text-decoration: none;
 	font-weight: bold;
     padding: 15px;
@@ -54,14 +136,18 @@
     background-color: #FEFAE0;
     transform: scale(1.25);
     }
+
+    .navbar a:active{
+      background-color: #FEFAE0;
+      text-decoration: underline;
+    }
 	
 	
     .navbar li{
     float: left;
      }
 
-       a {
-
+    a {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -77,13 +163,11 @@
     transition-timing-function: ease-in-out;
    }
 
-
    h2:hover{
     transform: rotate(-1deg);
    }
 
-
-      p {
+    p {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -92,6 +176,7 @@
     }
 
   .container {
+  border-radius: 15px 50px 30px 5px;
   overflow: hidden; 
   border: double 4px #a3b18a;
   margin: 20px 25px 10px 15px;
@@ -105,6 +190,7 @@
   height: auto; 
   margin-right: 15px;
 }
+   
 
 .container iframe {
   float: left; 
@@ -122,5 +208,6 @@ footer {
   width: 100%; 
   padding: 10px;
 }
+
 
   
