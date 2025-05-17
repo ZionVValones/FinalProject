@@ -1,10 +1,11 @@
- body {
-        background-color:#606C38;
-		    padding: 50px;
-        margin: 20px;
-	 }
+body {
+  background-color: #606C38;
+  padding: 50px;
+  margin: 20px;
+  font-family: "Work Sans", sans-serif;
+}
 
-
+/* SPRITES */
 .sprite {
   background: url('pictures/generalpics.png') no-repeat;
   display: block;
@@ -12,28 +13,27 @@
 
 .unplug {
   background-position: -264px -42px;
-  width: 400px; 
-  height: 149px; 
+  width: 400px;
+  height: 149px;
 }
 
 .walkingcycling {
   background-position: -256px -300px;
-  width: 400px; 
-  height: 106px; 
+  width: 400px;
+  height: 106px;
 }
 
 .five-r {
   background-position: -33px -300px;
-  width: 200px; 
-  height: 98px; 
+  width: 200px;
+  height: 98px;
 }
 
 .windsolar {
   background-position: -39px -42px;
-  width: 400px; 
-  height: 126px; 
+  width: 400px;
+  height: 126px;
 }
-
 
 .sprite2 {
   background: url('pictures/studentpics.png') no-repeat;
@@ -41,175 +41,157 @@
 }
 
 .socmed {
-	background-position: -20px -50px;
-	width: 216px;
-	height: 144px;
+  background-position: -20px -50px;
+  width: 216px;
+  height: 144px;
 }
 
 .switch {
-	background-position: -280px -50px;
-	width: 193px;
-	height: 144px;
+  background-position: -280px -50px;
+  width: 193px;
+  height: 144px;
 }
 
 .garden {
-	background-position: -16px -263px;
-	width: 229px;
-	height: 153px;
+  background-position: -16px -263px;
+  width: 229px;
+  height: 153px;
 }
 
 .treeplant {
-	background-position: -263px -263px;
-	width: 226px;
-	height: 151px;
+  background-position: -263px -263px;
+  width: 226px;
+  height: 151px;
 }
-
 
 .sprite3 {
   background: url('pictures/birdie.png') no-repeat;
-  width: 150px; 
-  height: 170px; 
-  animation: fly 1s steps(3) infinite; 
+  width: 150px;
+  height: 170px;
+  animation: fly 1s steps(3) infinite;
+  border: solid #606C38;
 }
 
 @keyframes fly {
-  from { background-position-x: 0; }
-  to { background-position-x: -600px; } 
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -600px;
+  }
 }
 
-
-div[class="sprite3"] {
-  border: solid #606C38; 
-}
-
+/* TEXT SELECTION */
 ::selection {
-  background-color: #d8e2c4; 
+  background-color: #d8e2c4;
 }
 
-	 h1 {
+/* HEADERS */
+h1, h2 {
   font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
   color: #283618;
-  transition-property: transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  font-weight: 700;
 }
 
-  h1:hover {
- transform: skewX(10deg);
+h1:hover {
+  transform: skewX(10deg);
 }
 
-        .logo,.title {
-	width:33%;
-	display:inline-block;
-	vertical-align:top;
-	position:relative;
-	}
-
-	
-	   .navbar ul{
-    list-style-type: none;
-    background-color: #606C38;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-     }
-	
-	
-	
-    .navbar a{
-    color: #283618;
-    text-decoration: none;
-	font-weight: bold;
-    padding: 15px;
-    display: block;
-    text-align: center;
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-     }
-
-
-    .navbar a:hover{
-    background-color: #FEFAE0;
-    transform: scale(1.25);
-    }
-
-    .navbar a:active{
-      background-color: #FEFAE0;
-      text-decoration: underline;
-    }
-	
-	
-    .navbar li{
-    float: left;
-     }
-
-    a {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+h2 {
   color: #a3b18a;
-   }
+}
 
+h2:hover {
+  transform: rotate(-1deg);
+}
 
-   h2{
-    color: #a3b18a;
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-   }
+/* LOGO AND TITLE */
+.logo, .title {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
 
-   h2:hover{
-    transform: rotate(-1deg);
-   }
+/* NAVIGATION */
+.navbar ul {
+  list-style-type: none;
+  background-color: #606C38;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
 
-    p {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+.navbar a {
   color: #283618;
-    }
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
 
-  .container {
+.navbar a:hover {
+  background-color: #FEFAE0;
+  transform: scale(1.25);
+}
+
+.navbar a:active {
+  background-color: #FEFAE0;
+  text-decoration: underline;
+}
+
+.navbar li {
+  float: left;
+}
+
+/* LINKS */
+a {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #a3b18a;
+}
+
+/* PARAGRAPHS */
+p {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #283618;
+}
+
+/* CONTAINER */
+.container, .quiz-container {
   border-radius: 15px 50px 30px 5px;
-  overflow: hidden; 
+  overflow: hidden;
   border: double 4px #a3b18a;
   margin: 20px 25px 10px 15px;
   padding: 20px;
   background-color: #FEFAE0;
-    }
+}
 
 .container img {
-  float: left; 
-  width: 50%; 
-  height: auto; 
+  float: left;
+  width: 50%;
+  height: auto;
   margin-right: 15px;
 }
-   
 
 .container iframe {
-  float: left; 
+  float: left;
   margin-right: 15px;
 }
 
 .container p {
-  text-align: justify; 
-  overflow: hidden; 
+  text-align: justify;
+  overflow: hidden;
 }
 
-.quiz-container {
-  border-radius: 15px 50px 30px 5px;
-  overflow: hidden; 
-  border: double 4px #a3b18a;
-  margin: 20px 25px 10px 15px;
-  padding: 20px;
-  background-color: #FEFAE0;
-}
+/* QUIZ BUTTONS */
 #options-container button {
   display: block;
   width: 100%;
@@ -221,13 +203,17 @@ div[class="sprite3"] {
   background-color: #4c4c2c;
   color: white;
   font-size: 16px;
+  transition: background-color 0.2s ease;
 }
+
 #options-container button.correct {
   background-color: green;
 }
+
 #options-container button.incorrect {
   background-color: red;
 }
+
 #next-button {
   margin-top: 20px;
   padding: 10px;
@@ -237,17 +223,13 @@ div[class="sprite3"] {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.2s ease;
 }
 
+/* FOOTER */
 footer {
   margin-top: auto;
-  text-align: center; 
-  width: 100%; 
+  text-align: center;
+  width: 100%;
   padding: 10px;
 }
-
-
-  
-
-
-  
