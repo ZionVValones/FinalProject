@@ -45,6 +45,14 @@ document.getElementById('signupForm').addEventListener('submit', function(e) {
     hasError = true;
   }
 
+  window.onload = function () {
+  document.getElementById('firstName').textContent = localStorage.getItem('firstName') || '';
+  document.getElementById('lastName').textContent = localStorage.getItem('lastName') || '';
+  document.getElementById('email').textContent = localStorage.getItem('email') || '';
+  document.getElementById('sex').textContent = localStorage.getItem('sex') || '';
+  document.getElementById('reason').textContent = localStorage.getItem('reason') || '';
+};
+
   if (!hasError) {
     localStorage.setItem('firstName', firstName.value.trim());
     localStorage.setItem('lastName', lastName.value.trim());
