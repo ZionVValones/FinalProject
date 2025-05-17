@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Profile</title>
+  <link rel="stylesheet" href="styles2.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="pictures/logo.png" alt="Logo of the Climate Action for Today's Generation website" height="100" width="100">
+    </div>
+
+    <div class="title">
+      <h1>Climate Action for Today's Generation</h1>
+    </div>
+  </header>
+
+  <nav class="navbar"> 
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="general.html">General Actions</a></li>
+      <li><a href="student.html">Student Actions</a></li>
+      <li><a href="signupform.html">Sign up now!</a></li>
+    </ul>
+  </nav>
+
+  <hr>
+
+  <div class="container">
+    <h1>Welcome to Your Profile</h1>
+    <p><strong>First Name:</strong> <span id="firstName"></span></p>
+    <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+    <p><strong>Email Address:</strong> <span id="email"></span></p>
+    <p><strong>Sex:</strong> <span id="sex"></span></p>
+    <p><strong>Why I Support This Campaign:</strong></p>
+    <p id="reason"></p>
+  </div>
+
+  <script>
+    document.getElementById('firstName').textContent = localStorage.getItem('firstName') || '';
+    document.getElementById('lastName').textContent = localStorage.getItem('lastName') || '';
+    document.getElementById('email').textContent = localStorage.getItem('email') || '';
+    document.getElementById('sex').textContent = localStorage.getItem('sex') || '';
+    document.getElementById('reason').textContent = localStorage.getItem('reason') || '';
+  </script>
+</body>
+</html>
